@@ -6,12 +6,26 @@ function loadJSON(requestURL) {
 
 	request.onload = function() {
 		var heraldry = request.response;
-		console.log(heraldry.divisions.length + 'loaded');
+		hideLoad();
+		postLoad(heraldry);
 	}
+}
+
+function hideLoad() {
+	var message = document.getElementById('load message');
+	message.style.visibility = false;
+}
+
+function postLoad(heraldry) {
+	var field = document.getElementById('field');
+
+	var randomField = heraldry.divisions[Math.random() * heraldry.divisions.length];
+
+	field.textContent = randomField;
 }
 
 function main() {
 	var heraldryURL = 'heraldry.json';
 	loadJSON(heraldryURL, 'heraldry');
-
 }
+
