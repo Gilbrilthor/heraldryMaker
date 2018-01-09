@@ -12,7 +12,7 @@ function loadJSON(requestURL) {
 }
 
 function hideLoad() {
-	var message = document.getElementById('loadMessage');
+	var message = document.getElementById('load-message');
 	message.style.visibility = false;
 }
 
