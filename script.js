@@ -19,7 +19,8 @@ function hideLoad() {
 function postLoad(heraldry) {
 	var field = document.getElementById('field');
 
-	var randomField = heraldry.divisions[Math.random() * heraldry.divisions.length];
+	var randomIndex = Math.floor(Math.random() * heraldry.divisions.length);
+	var randomField = heraldry.divisions[randomIndex];
 	console.log('random field -> "' + randomField + '"');
 
 	field.textContent = randomField;
