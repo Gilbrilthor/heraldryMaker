@@ -11,9 +11,7 @@ function loadJSON(requestURL, key) {
 }
 
 function main() {
-	window.alert('Javascript')
-
-	var heraldryURL = 'https://github.com/Gilbrilthor/heraldryMaker/blob/master/heraldry.json';
+	var heraldryURL = 'heraldry.json';
 	loadJSON(heraldryURL, 'heraldry');
 
 }
