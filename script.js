@@ -13,7 +13,7 @@ function loadJSON(requestURL) {
 
 function hideLoad() {
 	var message = document.getElementById('load-message');
-	message.style.visibility = false;
+	message.style.visibility = 'hidden';
 }
 
 function postLoad(heraldry) {
