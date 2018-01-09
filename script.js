@@ -5,7 +5,8 @@ function loadJSON(requestURL) {
 	request.send();
 
 	request.onload = function() {
-		console.log(data.heraldry.divisions.length + 'loaded');
+		var heraldry = request.response;
+		console.log(heraldry.divisions.length + 'loaded');
 	}
 }
 
