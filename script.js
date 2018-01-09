@@ -20,8 +20,11 @@ function postLoad(heraldry) {
 	var field = document.getElementById('field');
 
 	var randomField = heraldry.divisions[Math.random() * heraldry.divisions.length];
+	console.log('random field -> "' + randomField + '"');
 
 	field.textContent = randomField;
+
+	console.log('postLoad finished');
 }
 
 function main() {
