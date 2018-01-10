@@ -36,4 +36,17 @@
 		"Quarter",
 		"Chevron Inverted"
 	]
+	, "tinctures":[
+		"Gules",
+		"Azure",
+		"Vert",
+		"Sable",
+		"Purpure",
+		"Or",
+		"Argent",
+		"Emine",
+		"Counter-ermine",
+		"Pean",
+		"Vair"
+	]
 }
