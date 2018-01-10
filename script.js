@@ -17,7 +17,7 @@ function hideLoad() {
 }
 
 function getRandom(array) {
-	var randomIndex = Math.floor(Math.random() * heraldry.divisions.length);
+	var randomIndex = Math.floor(Math.random() * array.length);
 	var randomMember = array[randomIndex];
 
 	return randomMember;
